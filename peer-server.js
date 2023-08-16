@@ -7,7 +7,9 @@ const server = http.createServer(app);
 
 // cors allows us to make requests from the client to the server on a different port
 const cors = require('cors');
-app.use(cors());
+// allow localhost:4000 to make requests to localhost:5000
+app.use(cors({ origin: 'http://localhost:4000' }));
+
 
 const peerServer = ExpressPeerServer(server, {
   path: '/peer-server', // Specify the path for the Peer server
