@@ -1,0 +1,17 @@
+{
+    "name": "peer-server",
+    "version": "1.0.0",
+    "description": "Peer Server Example",
+    "main": "peer-server.js",
+    "scripts": {
+      "start": "node peer-server.js"
+    },
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1",
+      "http": "^0.13.3",
+      "peer": "^0.6.1"
+    }
+  }
+  
